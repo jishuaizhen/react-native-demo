@@ -20,15 +20,14 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   desc:{
-    color:'rgba(0,0,0,0.7)',
-    // marginBottom:100
+    color:'rgba(0,0,0,0.7)'
   },
   act:{
     width:swidth/4,
     height:swidth/8,
     backgroundColor:'blue',
     color:'white',
-    textAlgin:'center'
+    textAlign:'center'
   }
 })
 export default OrderScreen;

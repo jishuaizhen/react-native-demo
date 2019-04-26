@@ -7,7 +7,7 @@ class OrderScreen extends Component {
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <View style={styles.login}>
             <Text style={styles.desc}>你还没有登录，请先登录!</Text>
-            <View style={styles.act}>登录</View>
+            <Text style={styles.act}>登录</Text>
           </View>
         </View>
       );
@@ -23,11 +23,13 @@ const styles = StyleSheet.create({
     color:'rgba(0,0,0,0.7)'
   },
   act:{
-    width:swidth/4,
-    height:swidth/8,
-    backgroundColor:'blue',
+    width:swidth/6,
+    height:swidth/13,
+    backgroundColor:'#168',
     color:'white',
-    textAlign:'center'
+    textAlign:'center',
+    borderRadius:swidth/20,
+    lineHeight:swidth/13
   }
 })
 export default OrderScreen;

@@ -7,6 +7,20 @@ import OrderScreen from './Tab/OrderScreen.js';
 import MyCenterScreen from './Tab/MyCenterScreen.js';
 
 const TabNavigator = createBottomTabNavigator({
+  Home:{
+    screen: HomeScreen,
+    navigationOptions: {
+        tabBarLabel:'Home',
+        tabBarIcon:({tintColor,focused})=>(
+            <Ionicons
+              name={focused?'ios-remove-circle':'ios-remove-circle-outline'}
+              size={26}
+              style={{color:tintColor}}
+            />
+
+        )
+    }
+  },
   Order:{
     screen: OrderScreen,
     navigationOptions: {
@@ -35,20 +49,7 @@ const TabNavigator = createBottomTabNavigator({
       )
     }
   },
-  Home:{
-    screen: HomeScreen,
-    navigationOptions: {
-        tabBarLabel:'Home',
-        tabBarIcon:({tintColor,focused})=>(
-            <Ionicons
-              name={focused?'ios-remove-circle':'ios-remove-circle-outline'}
-              size={26}
-              style={{color:tintColor}}
-            />
-
-        )
-    }
-  },
+  
   
   
 },{
